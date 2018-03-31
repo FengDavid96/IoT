@@ -18,5 +18,5 @@ void loop() {
   Serial.println(Voltage);
   
   Serial.println("--------------------");
-  delay(500);
+  delay(200);
 }
