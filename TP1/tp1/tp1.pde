@@ -8,7 +8,7 @@ PrintWriter output;
 void setup() {
   String portName = Serial.list()[0];
   myPort = new Serial(this, portName, 9600);
-  output = createWriter( "data2.txt" );
+  output = createWriter( "data1.txt" );
 }
 
 void draw()
