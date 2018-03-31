@@ -8,14 +8,13 @@ PrintWriter output;
 void setup() {
   String portName = Serial.list()[0];
   myPort = new Serial(this, portName, 9600);
-  output = createWriter( "data.txt" );
+  output = createWriter( "data2.txt" );
 }
 
 void draw()
 {
   if (myPort.available() > 0 ) {
-         String val = myPort.readString();
-         println(val);
+         val = myPort.readString();
          output.println(val);
     }
 }
