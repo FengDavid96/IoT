@@ -31,7 +31,7 @@ public class Auth extends Authenticator {
   public PasswordAuthentication getPasswordAuthentication() {
     String username, password;
     username = "fyhdavid@gmail.com";
-    password = "Feng1996";
+    password = "mdp";
     System.out.println("authenticating. . ");
     return new PasswordAuthentication(username, password);
   }
@@ -55,7 +55,7 @@ void checkMail() {
  
    System.out.println("Connection initiated......");
    //Trying to connect IMAP server
-   store.connect("fyhdavid@gmail.com", "Feng1996");
+   store.connect("fyhdavid@gmail.com", "mdp");
    System.out.println("Connection is ready :)");
  
  
